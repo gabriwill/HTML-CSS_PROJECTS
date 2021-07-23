@@ -1,0 +1,84 @@
+:root{
+    --body-background: #3600a1b4;
+    --body-background-1gradient: #b993d69a;
+    --body-background-2gradient: #8ca6db9a;
+
+    --form-background: #4B00E0b6;
+    --form-background-1gradient: #8d2de2d8;
+    --form-background-2gradient: #4b00e0d8;
+}
+
+body{
+    text-align: center;
+    background-image: url('photo.jpg'); /* fallback for old browsers */
+    background-size: cover;
+    padding: 0;
+    color: aliceblue;
+    font-family: 'Poppins', Helvetica, sans-serif;
+    font-weight: 400;
+}
+main{
+    position: relative;
+    margin: -2rem;
+    padding: 2rem;
+    background-color: var(--body-background);
+}
+form{
+    text-align: left;
+    margin: auto;
+    width: 50%;
+    
+    background: var(--form-background);  
+
+    border-radius: 0.5rem;
+    padding: 2rem;
+    font-size: 1.2em;
+}
+form div{
+    margin: 1rem;
+}
+input{
+    margin: 0 0.5rem 0 0;
+    border: 1px solid #ced4da;
+}
+input[type="checkbox"],input[type="radio"]{
+    width: 1.2rem;
+    height: 1.2rem;
+}
+#name, #email, #number, select, textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+}
+#submit{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    color: rgb(234, 221, 252);
+    background-color: #10a165;
+    cursor: pointer;
+}
+input:focus, textarea:focus {
+    border-color: rgb(15, 219, 255);
+    outline: 0;
+    box-shadow: 0 0 0.2rem rgb(15, 219, 255);
+}
+option{
+    display: block;
+    min-height: 1.2em;
+    padding: 0.5rem;
+    line-height: 1.5rem;
+}
+label{
+    display: flex;
+    align-items: center;
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+}
+span{
+    margin-left: 1rem;
+    color: rgb(163, 158, 163);
+}
+textarea{
+    resize: none;
+}
