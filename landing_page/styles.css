@@ -120,14 +120,14 @@ main{
     background-color: #008B75;
     color: white;
 }
-#features{
+#features,#pricing{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     padding: 1em;
 }
 
-#features article{
+#features article,#pricing article{
     height: 50vh;
     width: 20vw;
     min-width: 250px;
@@ -161,13 +161,44 @@ main{
 }
 #how-works{
     margin-bottom: 0;
-    background-image: linear-gradient(to bottom, #4032dc,#4032dc,#4032dc,#4032dc,#4032dc,#4032dc,#4032dc,#4032dc,#4032dc, #3641e6, #2b4fef, #1c5bf7, #0067ff);
+    background-color:  #4032dc;
 }
 
+#pricing article div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2em;
+    width: 70%;
+    background-color: #4032dc;
+
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    border-radius: 1em;
+    padding: 0.2em;
+
+    transition: all 0.5s;
+}
+#pricing article div:hover{
+    background-color: white;
+    color: #4032dc;
+    border: 2px solid #4032dc;
+}
 footer{
     max-width: 100vw;
     padding: 1em 2em;
-    background-color: #0067ff;
+    text-align: right;
+    background-color: #4032dc;
+}
+footer p{
+    color: white;
+}
+footer a{
+    margin: 20px;
+    text-decoration: none;
+    color: white;
 }
 
 @media (max-width: 1200px){
