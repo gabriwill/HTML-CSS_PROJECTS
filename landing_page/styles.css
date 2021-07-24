@@ -13,6 +13,7 @@ header{
     background-color: #4032DC;
     display: flex;
     width: 100vw;
+    max-width: 100vw;
     justify-content: space-between;
 
     position: fixed;
@@ -203,7 +204,9 @@ footer a{
 
 @media (max-width: 1200px){
     #features{
-        overflow-y: scroll;
+        max-width: 100vw;
+        overflow-x:scroll;
+        justify-content: flex-start;
     }
     #how-works, #first-section{
         padding: 1em;
@@ -219,5 +222,14 @@ footer a{
     }
     #video{
         min-height: 80px;
+    }
+    #pricing{
+        flex-direction: column;
+    }
+    
+}
+@media (max-width: 700px){
+    nav{
+        display: none;
     }
 }
